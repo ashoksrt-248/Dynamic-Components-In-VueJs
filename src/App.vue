@@ -4,9 +4,9 @@
     <button @click="activeTab = 'TabA'">TabA</button>
     <button @click="activeTab = 'TabB'">TabB</button>
     <button @click="activeTab = 'TabC'">TabC</button>
-
+    <keep-alive>
     <component  :is="activeTab"/>
-    
+  </keep-alive>
   </div>
 </template>
 
